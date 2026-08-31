@@ -1,0 +1,3 @@
+pyyaml>=6.0
+tqdm>=4.65.0
+imatest-it  # 假设 Imatest IT Python 包名为 imatest-it，请根据实际安装名调整
