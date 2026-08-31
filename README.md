@@ -1,7 +1,7 @@
-config.yaml负责配置参数比如目录路径，各模块文件名，支持处理图像扩展名，处理选项。
-file_utils.py负责根据配置筛选目录名保持测试数据和断点数据（已处理过的图片标识集合），
-imatest_api_py根据配置的目录名对号调用ImatestLibrary的对应模块方法，
-imatest_base_ini是master版本运行过后保持的各模块参数配置文件，
-logger_config.py是日志输出在控制台反应进度条比如什么时间什么进度等，
-main.py就是统筹调用各py文件的内置函数，比如初始化日志加载配置参数加载断点调用imatest api保持测试数据等，
-metrics_...py是筛选目录得出模块名后对测试数据提纯另外保存特定csv文件
+1.config.yaml负责配置参数比如目录路径，各模块文件名，支持处理图像扩展名，处理选项
+2.file_utils.py负责根据配置筛选目录名保持测试数据和断点数据（已处理过的图片标识集合）
+3.imatest_api.py根据配置的目录名对号调用ImatestLibrary的对应模块方法
+4.imatest_base_ini是master版本运行过后保持的各模块参数配置文件
+5.logger_config.py是日志输出在控制台反应进度条比如什么时间什么进度等，、
+6.main.py就是统筹调用各py文件的内置函数，比如初始化日志加载配置参数加载断点调用imatest api保持测试数据等
+7.metrics_extractor.py是筛选目录得出模块名后对测试数据提纯另外保存特定csv文件
