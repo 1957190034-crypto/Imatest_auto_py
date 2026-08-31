@@ -5,6 +5,7 @@
 5.logger_config.py是日志输出在控制台反应进度条比如什么时间什么进度等，、
 6.main.py就是统筹调用各py文件的内置函数，比如初始化日志加载配置参数加载断点调用imatest api保持测试数据等
 7.metrics_extractor.py是筛选目录得出模块名后对测试数据提纯另外保存特定csv文件
-文件夹具体路径框架参考下图，test_images可以容纳多台设备多模块（Colorchecker、Flatfield、Random、SFRplus）
+文件夹具体路径框架参考下图，test_images可以容纳多台设备多模块（Colorchecker、Flatfield、Random、SFRplus），output自动创建无需理会，测试数据会以时间戳命名
+
 <img width="349" height="671" alt="image" src="https://github.com/user-attachments/assets/94fe699b-55fd-4131-8d95-0cb05a2c549e" />
 
