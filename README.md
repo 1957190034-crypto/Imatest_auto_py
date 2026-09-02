@@ -1,6 +1,6 @@
-# Imatest 自动化图像质量测试框架
+# Imatest 自动化图像质量测试脚本框架
 
-本系统是基于 Imatest IT 计算引擎与 Master 基准配置体系开发的自动化图像质量测试框架，面向摄像头模组量产验证与图像质量评估场景，实现对 SFRplus（分辨率与综合画质分析）、Colorchecker（色彩还原与白平衡精度）、Flatfield（亮度均匀性与颜色阴影）、Random（纹理锐度与枯叶图分析）以及 Checkerboard（高密度畸变与MTF测量）五大核心测试模块的自动化调度与批量执行。系统通过配置文件驱动测试流程，可对多设备、多模块的测试图卡进行并行处理，输出结构化测试数据，为图像质量调优与产品一致性验证提供标准化、可追溯的量化评估依据。
+本系统是基于 Imatest IT 计算引擎与 Master 基准配置体系使用python语言开发的自动化图像质量测试框脚本，面向摄像头模组量产验证与图像质量评估场景，通过调用 Imatest IT Python API（imatest-it 库），基于 Master 配置文件，实现对 SFRplus（分辨率与综合画质分析）、Colorchecker（色彩还原与白平衡精度）、Flatfield（亮度均匀性与颜色阴影）、Random（纹理锐度与枯叶图分析）以及 Checkerboard（高密度畸变与MTF测量）五大核心测试模块的自动化调度与批量执行。系统通过配置文件驱动测试流程，可对多设备、多模块的测试图卡进行并行处理，输出结构化测试数据，为图像质量调优与产品一致性验证提供标准化、可追溯的量化评估依据。
 
 
 ## ✨ 核心功能
@@ -107,3 +107,17 @@
 | `metrics_extractor.py` | 筛选目录得出模块名，对测试数据提纯并另存为特定 CSV 文件 |
 
 | `main.py` | 程序主入口，统筹调用各模块：初始化日志 → 加载配置 → 加载断点 → 调用 Imatest API → 保存测试数据 |
+
+## 📄 安装核心依赖
+
+一、安装 Imatest IT 计算引擎和 Mater GUI软件
+
+从 Imatest 官网下载并安装 Imatest IT（独立命令行/计算引擎版）和Mater GUI交互式软件。
+
+在 Imatest master中导出imatest_base.ini文件
+
+二、安装 imatest-it Python 库
+
+Imatest IT 安装完成后，在安装目录的 python/ 子目录下找到 whl 包进行安装：
+
+参考路径：../Imatest/v23.2/IT/libs/library/python/imatest_it-23.2.16-py2.py3-none-any.whl
