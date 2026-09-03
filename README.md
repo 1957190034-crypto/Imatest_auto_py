@@ -46,6 +46,10 @@
 
 ├── metrics_extractor.py # 指标提取：筛选目录导出模块名，对测试数据提纯并另存为特定 CSV 文件
 
+├── processed.pkl # 断点数据：运行一遍后自动生成，用于保存已被测试过图片的标识集合 
+
+├── requirements.txt # 环境需求：根据需求配置环境方可运行脚本
+
 ├── main.py # 主入口：统筹调用各模块，包括初始化日志、加载配置、加载断点、调用 Imatest API、保存测试数据等
 
 ├── test_images/ # 待测测试图卡目录（按设备/模块分类存放）
@@ -88,6 +92,20 @@
 各模块测试数据按模块分类保存：
 
 <img width="349" alt="模块数据目录" src="https://github.com/user-attachments/assets/94fe699b-55fd-4131-8d95-0cb05a2c549e" />
+
+输出目录以及指标提纯文件：
+
+<img width="576" height="334" alt="image" src="https://github.com/user-attachments/assets/c8a18003-e5db-4f45-a195-b24c99868f56" />
+
+<img width="575" height="36" alt="image" src="https://github.com/user-attachments/assets/7f79f3db-2e21-4a24-a8ce-3daff65838de" />
+
+<img width="576" height="39" alt="image" src="https://github.com/user-attachments/assets/6f22fd30-1853-49f4-8c56-8f55c55b4a93" />
+
+<img width="576" height="30" alt="image" src="https://github.com/user-attachments/assets/6260709a-ea64-4612-adda-61df947a98c6" />
+
+进度条可视化：
+
+<img width="575" height="396" alt="image" src="https://github.com/user-attachments/assets/a6187477-6978-4590-a753-0784199bd136" />
 
 
 ## 📄 核心文件说明
