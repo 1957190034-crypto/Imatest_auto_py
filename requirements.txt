@@ -1,3 +1,5 @@
-pyyaml>=6.0
-tqdm>=4.65.0
-imatest-it  # 假设 Imatest IT Python 包名为 imatest-it，请根据实际安装名调整
+pandas>=1.3.0
+openpyxl>=3.0.0
+numpy>=1.21.0
+PyYAML>=5.4.0
+tqdm>=4.60.0
